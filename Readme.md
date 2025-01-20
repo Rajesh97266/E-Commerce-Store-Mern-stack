@@ -9,4 +9,6 @@
 //Next part 
 
 1.Create 3 files in backend for the user how it should looks like userModel.js userRoute.js userController.js
-2
+2. Create a asynchHandler function in the middlewares folder.
+3.create a user function in userController.js and call it from userRoute.js
+4. Call that in the index.js file
