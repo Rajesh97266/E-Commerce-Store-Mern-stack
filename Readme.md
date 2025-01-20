@@ -3,4 +3,10 @@
 3.Given npm init -y in the common outside folder and added the necessary packages 
 4.Created a .env file in the common folder.
 5.Added necessary packages in frontend .
-6Connected to database using mongoose
+6.Connected to database using mongoose
+
+
+//Next part 
+
+1.Create 3 files in backend for the user how it should looks like userModel.js userRoute.js userController.js
+2
