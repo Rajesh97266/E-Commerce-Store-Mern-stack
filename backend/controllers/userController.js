@@ -46,9 +46,6 @@ const createUser = asyncHandler(async (req, res) => {
 const loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
-  console.log(email);
-  console.log(password);
-
   const existingUser = await User.findOne({ email });
 
   if (existingUser) {
@@ -71,4 +68,11 @@ const loginUser = asyncHandler(async (req, res) => {
   }
 });
 
-export { createUser, loginUser };
+//Logout a user
+
+const logoutCurrentUser = asyncHandler(async (req, res) => {
+  res.cookie("jwt", "", { httpOnly: true, expires: new Date(0) });
+  res.status(200).json({ message: "User logged out successfully" });
+});
+
+export { createUser, loginUser, logoutCurrentUser };
