@@ -12,3 +12,8 @@
 2. Create a asynchHandler function in the middlewares folder.
 3.create a user function in userController.js and call it from userRoute.js
 4. Call that in the index.js file
+
+//Create a jwt token in the utils folder.
+1.Create a logic for the cookies and jwt token and link it with the userController.js
+
+//Create a login for the user 
